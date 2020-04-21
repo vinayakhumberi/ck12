@@ -1,0 +1,56 @@
+.toc{
+  width: 800px;
+}
+
+.rows {
+  box-shadow: rgba(187, 187, 187, 0.34) 0px 1px 1px 2px;
+}
+.rows.active {
+  box-shadow: rgba(187, 187, 187, 0.34) 0px 1px 1px 2px;
+}
+
+.rows .coll {
+  background-color: #bbdefb;
+  color: #343434;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.rows .coll> span {
+  float: right;
+}
+.rows.active .coll, .coll:hover {
+  background-color: #42a5f5;
+}
+.rows .coll-body a{
+  display: block;
+  background-color: #ffffff;
+  color: #343434;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  width: 800px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.rows .coll-body a:hover{
+  background: #eee;
+}
+.rows .coll-body {
+  /* transform: scale(1); */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.rows.active .coll-body {
+  max-height: 20000px;
+}
+
